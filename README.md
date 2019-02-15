@@ -1,3 +1,9 @@
+# Conteúdo do repositório
+Projeto freelancer
+Seguir um modelo original utilizando apenas HTML e CSS.
+Utilizar tags semânticas.
+Classes.
+
 # Freelancer
 
 * **Track:** _Common Core_
