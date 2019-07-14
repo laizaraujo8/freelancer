@@ -1,35 +1,59 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:700');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:800');
+@import url('https://fonts.googleapis.com/css?family=Lato:300');
 @import url('https://fonts.googleapis.com/css?family=Lato:300');
 
 *{
     margin: 0px;
 }
 
-ul{
-    background-color: #2c3e50;
-    color: #fff;
-    font-family: Montserrat;
-    padding-left: 117px; 
+.backb.font-montserrat{
+    background-color:#2c3e50;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    
 }
 
-li{
-    display: inline-block;
-    font-size: 15px;
-    padding: 35px;
+nav{
+    height: 80px;
+    padding: 0px 136px;
 }
 
-li:first-child{
-    font-size: 30px;
-    padding: 35px;
-    font-weight: 900;
+ul{ 
+    justify-content: flex-end;
+    list-style: none; 
+    position: relative;
 }
+
+a{text-decoration: none; color: #fff;}
+
+li > a{
+    font-size:16px;
+    padding: 10px; 
+}
+
+li > a:hover{
+    color: #18bc9c;
+    cursor: pointer;
+}
+
+figure.flex-box{
+    margin: 0;
+    position: relative;
+    top: 23px;
+}
+
+figure > a{
+    font-size:25px;
+}
+
+.flex-box{display: flex;}
 
 .profile{
     position: relative;
     padding: 100px 550px 10px;
     margin-left: auto;
     margin-right: auto
-
 }
 
 .text{
@@ -41,8 +65,8 @@ li:first-child{
 
 .text2{
     color: rgb(252, 249, 249);
-    font-family: lato;
-    font-size: 30px;
+    font-family: montserrat;
+    font-size: 23px;
     text-align: center;
     padding: 13px;
 }
@@ -52,8 +76,9 @@ li:first-child{
     height: 570px;
     
 }
+
 .estrela{
-    padding: 0px 0px 0px 550px ;
+    padding: 0px 0px 0px 540px ;
 }
 
 .text-portfolio{
@@ -61,24 +86,26 @@ li:first-child{
     margin-top: 80px;
     font-family: montserrat;
     font-size: 50px;
-    text-align: center;
-    
+    text-align: center; 
 }
+
 .estrela-azul{
-    padding: 0px 0px 20px 550px ;
+    padding: 0px 0px 20px 540px ;
 }
+
 .seis{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     margin: 0px 70px;
-
 }
+
 .seis>img{
     width: 28vw;
     margin-bottom: 30px;
 }
+
 .about{
     background-color: #18bc9c;
     color: rgb(252, 249, 249);
@@ -88,6 +115,7 @@ li:first-child{
     margin-top: 5%;
     padding-top: 5%
 }
+
 .about-text{
     display: flex;
     align-content: flex-start;
@@ -97,15 +125,18 @@ li:first-child{
     font-size: 22px;
     text-align: justify;
     padding: 13px;
-
 }
+
 .p1{
     margin: 5px 50px;
+    font-family: montserrat;
+    font-size: 20px;
 }
+
 .download{
     background-color: transparent;
     border: 1px solid transparent;
-    font-family: 'Lato', sans-serif;
+    font-family: 'montserrat', sans-serif;
     padding: 15px;
     color: white;
     font-size: 20px;
@@ -117,6 +148,7 @@ li:first-child{
     border-width: 2px;
     cursor: pointer;
 }
+
 .form{
     position: relative;
 }
@@ -133,8 +165,8 @@ li:first-child{
     border: none;
     border-bottom: solid 1px gray;
     padding: 20px 0;
-    font-family: 'Lato';
-    font-size: 20px;
+    font-family: 'montserrat';
+    font-size: 15px;
 }
 
  .formulario >textarea{
@@ -144,13 +176,13 @@ li:first-child{
     padding-bottom: 45px;
     resize: none;
     padding: 20px 0;
-    font-family: 'Lato';
-    font-size: 20px;
+    font-family: 'montserrat';
+    font-size: 15px;
 }
 
  #click{
      background-color: #18BC9C;
-     font-family: 'Lato';
+     font-family: 'montserrat';
      border: none;
      padding: 17px 20px;
      color: white;
@@ -160,8 +192,63 @@ li:first-child{
      position: relative;
      box-sizing: border-box;
 }
+
+footer{
+    background-color: #021324;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 98px;
+    padding: 0 105px;
+}
+
+footer > div {
+    width: 340px;
+    margin: 50px 15px;
+    font-family: 'Lato', sans-serif;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+footer > div > p{
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+}
+
+footer > div > p > a{ 
+    text-transform: capitalize;
+    color: #18bc9c;
+}
+
+footer > div > p > a:hover{ 
+    text-decoration: underline; 
+    color: #128f76;
+}
+
+.social-network{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+h4{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: -9px;
+    margin-bottom: 13px;
+}
+
+.fab{
+    border: 2px solid #ffffff;
+    padding: 4%;
+    border-radius: 50% ;
+    margin: 20px 3px;
+}
+
  .fundo{
-     background-color:#2c3e50;
+     background-color: #021324;
      height: 250px;
 }
 
@@ -179,5 +266,5 @@ li:first-child{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 13px;
     text-align: center;
-    padding-top: 25px
+    padding-top: 15px
 }
